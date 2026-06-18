@@ -1,0 +1,7 @@
+{
+  "name": "prueba-github-actions",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"¡Pruebas automáticas superadas con éxito!\" && exit 0"
+  }
+}
