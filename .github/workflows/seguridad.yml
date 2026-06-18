@@ -1,0 +1,15 @@
+name: Ejemplo de Seguridad
+on: workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  ejemplo-seguro:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Usar variable protegida
+        run: echo "Secreto configurado exitosamente"
+        env:
+          API_TOKEN: ${{ secrets.API_TOKEN }}
